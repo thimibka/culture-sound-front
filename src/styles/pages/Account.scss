@@ -1,0 +1,377 @@
+.account {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+
+      button {
+        color: $bg-color;
+        margin: 1em;
+        width: 15vw;
+        font-size: 24px;
+        height: 5vh;
+        font-weight: 700;
+        border-radius: 20px;
+        background: #EFEFD0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: none;
+      }
+
+      &__off {
+        button {
+          background: none;
+          border: solid 1px $beige;
+          color: $white;
+        }
+      }
+    }
+
+    &__forms {
+      border: solid 1px #EFEFD0;
+      border-radius: 25px;
+      background-color: $bg-box;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40vw;
+
+      &__forget {
+        margin-top: 1vh;
+
+        p {
+          cursor: pointer;
+          font-size: 12px;
+        }
+
+        &__title {
+          margin: 1em;
+          margin-top: 2em;
+
+        }
+
+        &__content {
+          border: solid 1px #EFEFD0;
+          border-radius: 25px;
+          background-color: $bg-box;
+          height: 15vh;
+          width: 40vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+              width: 30vw;
+              height: 3vh;
+              border-radius: 5px;
+              border: none;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              padding: 1vw;
+              height: 1vh;
+            }
+
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: $beige;
+              border-radius: 5px;
+              color: $bg-color;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              margin-top: 2vh;
+              font-weight: 500;
+              font-size: 18px;
+              border: none;
+              width: 15vw;
+              height: 3vh;
+            }
+          }
+
+        }
+      }
+
+
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+          font-family: 'Satoshi', sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          margin-top: 1em;
+          margin-bottom: 1vh;
+        }
+
+        input {
+          width: 30vw;
+          height: 3vh;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $beige;
+          border-radius: 5px;
+          color: $bg-color;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 4vh;
+          font-weight: 500;
+          font-size: 18px;
+          border: none;
+          width: 15vw;
+          height: 3vh;
+        }
+      }
+    }
+  }
+
+  &__logged {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__subtitle {
+      font-size: 22px;
+    }
+
+    &__buttons {
+      margin: 1em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 75vh;
+
+      button {
+        background-color: $beige;
+        border: none;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 25vw;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 1em;
+      }
+
+      &__up {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__stats {
+
+          margin-top: 2vh;
+          border: solid 1px $beige;
+          border-radius: 20px;
+          height: 20vh;
+          width: 25vw;
+          background-color: $bg-box;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h1 {
+            margin: 1vh;
+            font-size: 24px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+
+          b {
+            color: $beige;
+          }
+
+          hr {
+            width: 10vw;
+          }
+
+          &__score {
+            margin-top: 2vh;
+            height: 100%;
+
+            &__already {
+              margin: 1vw;
+            }
+
+            &__never {
+              display: flex;
+              text-align: center;
+              margin: 1vw;
+
+            }
+          }
+        }
+      }
+
+      &__down {
+        &__delete {
+          button {
+            background-color: $danger;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    margin-top: 5vh;
+
+    &__title {
+      width: 70vw;
+
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    &__body {
+      &__buttons {
+        button {
+          width: 30vw;
+          height: 6vh;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+
+      &__forms {
+        width: 60vw;
+        padding: 2vh;
+        margin: 1em;
+
+
+        p {
+          font-size: 12px;
+          cursor: pointer;
+        }
+
+        form {
+          label {
+            font-weight: 500;
+            margin: 2vw;
+          }
+
+          input {
+            width: 50vw;
+            height: 3vh;
+            font-family: 'Satochi', sans-serif;
+            font-weight: 500;
+          }
+
+          button {
+            border: none;
+            width: 30vw;
+            height: 4vh;
+            font-size: 14px;
+
+            h3 {
+              color: $bg-color;
+              align-items: center;
+            }
+          }
+        }
+
+        button:hover {
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &__forget {
+
+          &__title {
+            margin-top: 1em;
+          }
+
+          &__content {
+            width: 65vw;
+
+            form {
+
+              input {
+                width: 40vw;
+                height: 3vh;
+                font-family: 'Satochi', sans-serif;
+                font-weight: 500;
+                font-size: 12px;
+              }
+
+              button {
+                font-size: 12px;
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+
+    &__logged {
+      margin-top: 3vh;
+
+      &__subtitle {
+        font-size: 18px;
+      }
+
+      &__buttons {
+        margin-top: 3vh;
+        height: 70vh;
+
+        &__up {
+          &__stats {
+            height: 30vh;
+            width: 50vw;
+
+            h1 {
+              text-align: center;
+              font-size: 18px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+
+        }
+
+        button {
+          margin: 1em;
+          width: 50vw;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

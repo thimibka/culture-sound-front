@@ -1,0 +1,126 @@
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-top: 5vh;
+
+    h1 {
+      color: $white;
+      font-size: 64px;
+      font-weight: 900;
+    }
+  }
+
+  &__body {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-box;
+    border: solid 1px #efefd0;
+    border-radius: 25px;
+    margin-top: 7vh;
+    width: 70vw;
+    padding: 1vh;
+    height: 25vh;
+
+    h3 {
+      margin: 1vh;
+    }
+
+    &__content {
+      display: flex;
+
+      &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh;
+        width: 8vw;
+
+        img:hover {
+          cursor: pointer;
+          aspect-ratio: 1/1;
+          width: 7.5vw;
+          transition: ease-in-out;
+        }
+
+        h3 {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__title {
+      margin-top: 5vh;
+      margin-bottom: 1vh;
+
+      h1 {
+        font-size: 24px;
+        font-weight: 900;
+        color: $white;
+      }
+    }
+
+    &__body {
+      margin: 1vh;
+      border: solid 1px #efefd0;
+      border-radius: 25px;
+      background-color: $bg-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 80vw;
+      height: fit-content;
+
+      &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &__card {
+
+          margin: 0px;
+          width: 20vw;
+          max-width: 100%;
+
+
+
+            img:hover {
+              width: 20vw;
+            }
+     
+
+          h3 {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  @media (max-width: 767.98px) {
+    aspect-ratio: 1/1;
+    width: 9vh;
+  }
+
+  aspect-ratio: 1/1;
+  width: 7vw;
+  background-color: $orange;
+  border: none;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: $beige;
+}

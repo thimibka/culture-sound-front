@@ -1,0 +1,62 @@
+$bg-color: #111d4a;
+$bg-color2: #111d4aa1;
+$bg-box: rgba(17, 29, 74, 0.4);
+$orange: #f7c59f;
+$beige: #efefd0;
+$white: #ffffff;
+$danger:rgb(203, 48, 48);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Satoshi", sans-serif;
+}
+
+html {
+  background-color: $bg-color;
+}
+
+.root {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.orange-background {
+  -webkit-transform: translate3d(0, 0, 0);
+  position: absolute;
+  background-color: $orange;
+  filter: blur(250px);
+  height: 55vh;
+  width: 90vw;
+  top: 25vh;
+  z-index: -1;
+}
+
+.error{
+  p{
+    color: red;
+  }
+}
+
+.leave {
+  position: absolute;
+  top: 2vh;
+  left: 5vw;
+
+  p {
+    text-decoration: none;
+    color: $white;
+    font-family: "Satochi", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 767.98px) {
+    top: 2vh;
+    left: 10vw;
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
