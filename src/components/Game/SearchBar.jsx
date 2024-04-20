@@ -9,8 +9,9 @@ export default function SearchBar({ onSearchResults, searchBarReset }) {
     setSearchTerm(value);
 
     const response = await fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${value}&api_key=${import.meta.env.VITE_API_KEY_LAST_FM}&format=json`
-
+      `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${value}&api_key=${
+        import.meta.env.API_KEY_LAST_FM
+      }&format=json`
     );
     const data = await response.json();
 
