@@ -1,4 +1,4 @@
-import React, { useEffect, useState  } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -80,7 +80,7 @@ export default function ChoicePlaylist() {
           </div>
 
           <div className="playlist__body">
-            <h3> Par années</h3>
+            <h3> Par années (france)</h3>
             <div className="playlist__body__content">
               {playlists.map((list) =>
                 list.playlist_type == "Années" ? (
