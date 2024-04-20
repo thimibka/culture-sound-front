@@ -34,10 +34,12 @@
     &__content {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      margin-top: 40px;
+      margin-left: 60px;
 
       &__card {
         margin: 0px;
-        width: 15vw;
+        width: 10vw;
         max-width: 100%;
 
         img:hover {
