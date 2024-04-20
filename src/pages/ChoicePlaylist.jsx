@@ -100,7 +100,7 @@ export default function ChoicePlaylist() {
           </div>
 
           <div className="playlist__body">
-            <h3> Par genre</h3>
+            <h3> Par genre (mondial)</h3>
             <div className="playlist__body__content">
               {playlists.map((list) =>
                 list.playlist_type == "Genre" ? (
