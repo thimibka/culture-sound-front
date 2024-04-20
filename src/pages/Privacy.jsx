@@ -9,12 +9,10 @@ export default function Privacy() {
       </p>
       <h1>Article 2 : Mentions légales</h1>
       <p>
-        L’édition du site https://culture-sound.vercel.app/ est assurée par les
-        stagiaires de l'établissement d'enseignement "The Hacking Project" dont
-        le siège social est localisé au 83 Bd Macdonald, 75019 Paris, France
-        Métropolitaine. Les hébergeurs du site sont: -La société Heroku, siege :
-        Market, Suite 300, San Francisco, CA 94105, United States. -La société
-        Vercel, siége : 340 S Lemon Ave #4133, Walnut, CA 91789.
+        L’édition du site https://culture-sound.vercel.app/ est un projet
+        personnel Les hébergeurs du site sont: -La société Fly.io, siege : 321 N
+        Clark St #2550, Chicago, IL 60654, États-Unis. / -La société Vercel,
+        siége : 340 S Lemon Ave #4133, Walnut, CA 91789.
       </p>
       <h1>Article 3 : Accès au site</h1>
       <p>
