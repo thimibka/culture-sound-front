@@ -12,9 +12,9 @@ import LoggedUser from "../components/StationUtility/LoggedUser";
 
 export default function Profile() {
   const dispatch = useDispatch();
-  debugger;
+  // debugger;
   const token = Cookies.get("user_token");
-  debugger;
+  // debugger;
   const [nickname, setNickname] = useState("");
 
   const userLoggedIn = LoggedUser();
