@@ -68,7 +68,12 @@ export default function EditProfile() {
         params
       );
       const { user } = await response.json();
-      setFormData(user);
+      setFormData({
+        nickname: user.nickname ?? "",
+        email: user.email ?? "",
+        password: "",
+        passwordConfirmation: "",
+      });
     } catch (error) {
       console.error(error);
     }
@@ -89,10 +94,15 @@ export default function EditProfile() {
       <div className="edit">
         <h1>Modifier votre profil</h1>
         <form className="edit__form" onSubmit={handleSubmit}>
-
           <h3>Vos informations</h3>
-          <FieldEditNickname onNicknameChange={handleFormDataChange} formData={formData} />
-          <FieldEditEmail onEmailChange={handleFormDataChange} formData={formData} />
+          <FieldEditNickname
+            onNicknameChange={handleFormDataChange}
+            formData={formData}
+          />
+          <FieldEditEmail
+            onEmailChange={handleFormDataChange}
+            formData={formData}
+          />
 
           <h3>Réinitialiser votre mot mot de passe</h3>
           <FieldEditPassword
@@ -105,7 +115,7 @@ export default function EditProfile() {
           </div>
           {errorMessage}
         </form>
-      </div >
+      </div>
       <div className="orange-background"></div>
     </>
   );
