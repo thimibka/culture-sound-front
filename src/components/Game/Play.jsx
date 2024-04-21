@@ -83,9 +83,10 @@ export default function Play({
   }
 
   function launchPlayer() {
+    console.log("contenu de selectSong:", selectSong);
     setCurrentSong(selectSong);
     setMatchingResults(false);
-    console.log(selectSong.youtube_title)
+    console.log(selectSong.youtube_title);
     manageSongDuration(22000);
     setSongFinished(false);
     if (currentSong) {
@@ -100,7 +101,7 @@ export default function Play({
     setCurrentSong(null);
   }
 
-  useEffect(() => { }, [matchingResults]);
+  useEffect(() => {}, [matchingResults]);
 
   function manageSongDuration(time) {
     setTimeout(() => {
