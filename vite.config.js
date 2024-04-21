@@ -15,7 +15,7 @@ export default defineConfig({
         name: "Culture sound",
         short_name: "CultureSound",
         description: "Le futur du blind test",
-        start_url: "https://culture-sound-back.fly.dev",
+        start_url: process.env.VITE_BASE_URL ?? "/",
         theme_color: "#ffffff",
         icons: [
           {
@@ -28,6 +28,11 @@ export default defineConfig({
             src: "/src/assets/128x128.png",
             type: "image/png",
             sizes: "128x128",
+          },
+          {
+            src: "/src/assets/144x144.png",
+            type: "image/png",
+            sizes: "144x144",
           },
           {
             src: "/src/assets/256x256.png",
