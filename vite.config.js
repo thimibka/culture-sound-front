@@ -30,11 +30,6 @@ export default defineConfig({
             sizes: "128x128",
           },
           {
-            src: "144x144.png",
-            type: "image/png",
-            sizes: "144x144",
-          },
-          {
             src: "256x256.png",
             type: "image/png",
             sizes: "256x256",
