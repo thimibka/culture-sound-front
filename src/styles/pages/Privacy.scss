@@ -5,29 +5,24 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-.privacy{
-
+.privacy {
   padding: 1em;
 
-  h1{
+  h1 {
     color: $beige;
-
   }
 
-  p{
+  p {
     color: $white;
-
   }
 
-  @media (max-width: 767.98px){
-
-    h1{
+  @media (max-width: 767.98px) {
+    h1 {
       font-size: 16px;
       margin-top: 1vh;
-      
     }
 
-    p{
+    p {
       font-size: 12px;
     }
   }

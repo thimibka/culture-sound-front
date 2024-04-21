@@ -28,7 +28,7 @@ export default function () {
       >
         Ce site utilise des cookies. Pour en savoir plus, cliquez sur
         <NavLink
-          style={{ color: "#FFFFFF" }}
+          style={{ color: "	#B2B2FF" }}
           to="../Privacy"
           className="buttonPrivacy"
         >

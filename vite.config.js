@@ -13,7 +13,7 @@ export default defineConfig({
       },
       manifest: {
         name: "Culture sound",
-        short_name: "CultureTest",
+        short_name: "CultureSound",
         description: "Le futur du blind test",
         start_url: process.env.VITE_BASE_URL ?? "/",
         theme_color: "#ffffff",
