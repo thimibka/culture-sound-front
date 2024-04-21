@@ -19,28 +19,28 @@ export default defineConfig({
         theme_color: "#ffffff",
         icons: [
           {
-            src: "/assets/16x16.png",
+            src: "16x16.png",
             type: "image/png",
             sizes: "16x16",
             purpose: "maskable",
           },
           {
-            src: "/assets/128x128.png",
+            src: "128x128.png",
             type: "image/png",
             sizes: "128x128",
           },
           {
-            src: "/assets/144x144.png",
+            src: "144x144.png",
             type: "image/png",
             sizes: "144x144",
           },
           {
-            src: "/assets/256x256.png",
+            src: "256x256.png",
             type: "image/png",
             sizes: "256x256",
           },
           {
-            src: "/assets/512x512.png",
+            src: "512x512.png",
             type: "image/png",
             sizes: "512x512",
           },
