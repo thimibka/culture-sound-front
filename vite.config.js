@@ -15,7 +15,7 @@ export default defineConfig({
         name: "Culture sound",
         short_name: "CultureSound",
         description: "Le futur du blind test",
-        start_url: process.env.VITE_BASE_URL ?? "/",
+        start_url: "https://culture-sound.vercel.app/",
         theme_color: "#ffffff",
         icons: [
           {
