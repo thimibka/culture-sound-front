@@ -1,8 +1,12 @@
 import ReactPlayer from "react-player";
-import React, {  useEffect } from "react";
+import React, { useEffect } from "react";
 
-export default function Player({currentSong, volume, songFinished, setProgress}) {
-
+export default function Player({
+  currentSong,
+  volume,
+  songFinished,
+  setProgress,
+}) {
   function handleProgress(state) {
     const seconds = state.playedSeconds.toFixed(0);
     setProgress(seconds);
