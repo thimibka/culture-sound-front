@@ -24,7 +24,7 @@ export default function Play({
   const [displaySuccess, setDisplaySuccess] = useState(false);
   const [progress, setProgress] = useState(0);
   const [displayDanger, setDisplayDanger] = useState(false);
-  const [selectSong, setSelectSong] = useState("");
+  const [selectSong, setSelectSong] = useState(null);
   const [currentSong, setCurrentSong] = useState(null);
   const [matchingResults, setMatchingResults] = useState(false);
   const [volume, setVolume] = useState(0.25);
