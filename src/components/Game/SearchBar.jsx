@@ -16,12 +16,6 @@ export default function SearchBar({ onSearchResults, searchBarReset }) {
 
     const data = await response.json();
 
-    // const response = await fetch(
-    //   `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${value}&api_key=05b66f4e896062dc2e236df97a3648f0&format=json`
-    // );
-
-    // const data = await response.json();
-
     if (data.results?.trackmatches?.track) {
       const results = data.results.trackmatches.track
         .map((track) => ({
