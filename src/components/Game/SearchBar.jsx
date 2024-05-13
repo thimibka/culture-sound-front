@@ -8,10 +8,16 @@ export default function SearchBar({ onSearchResults, searchBarReset }) {
     const value = event.target.value;
     setSearchTerm(value);
 
+    // const response = await fetch(
+    //   `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${value}&api_key=${
+    //     import.meta.env.VITE_API_LAST_FM
+    //   }&format=json`
+    // );
+
+    // const data = await response.json();
+
     const response = await fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${value}&api_key=${
-        import.meta.env.VITE_API_LAST_FM
-      }&format=json`
+      `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${value}&api_key=05b66f4e896062dc2e236df97a3648f0&format=json`
     );
 
     const data = await response.json();
