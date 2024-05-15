@@ -1,10 +1,10 @@
-$bg-color: #111d4a;
-$bg-color2: #111d4aa1;
+$bg-color: #054152;
+$bg-color2: #054152;
 $bg-box: rgba(17, 29, 74, 0.4);
-$orange: #f7c59f;
+$orange: #b41b1b;
 $beige: #efefd0;
 $white: #ffffff;
-$danger:rgb(203, 48, 48);
+$danger: rgb(203, 48, 48);
 
 * {
   padding: 0px;
@@ -32,8 +32,8 @@ html {
   z-index: -1;
 }
 
-.error{
-  p{
+.error {
+  p {
     color: red;
   }
 }
