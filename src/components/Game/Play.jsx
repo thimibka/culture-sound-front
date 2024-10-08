@@ -89,7 +89,7 @@ export default function Play({
     console.log(selectSong.youtube_title);
     activateSearchBar(false);
     Patient(true);
-    manageSongDuration(7000);
+    manageSongDuration(10000);
     setSongFinished(false);
 
     if (currentSong) {
