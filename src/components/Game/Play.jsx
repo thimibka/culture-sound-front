@@ -87,8 +87,11 @@ export default function Play({
     setCurrentSong(selectSong);
     setMatchingResults(false);
     console.log(selectSong.youtube_title);
-    manageSongDuration(22000);
+    activateSearchBar(false);
+    Patient(true);
+    manageSongDuration(5000);
     setSongFinished(false);
+
     if (currentSong) {
       const intervalId = setInterval(() => {
         setProgress((prevProgress) => prevProgress + 1);
@@ -106,13 +109,17 @@ export default function Play({
   function manageSongDuration(time) {
     setTimeout(() => {
       setSongFinished(true);
+      activateSearchBar(true);
+      Patient(false);
+
       stopPlayer();
     }, time);
   }
 
   function handleCountdownFinish() {
     chooseRandomSong();
-    activateSearchBar(true);
+    activateSearchBar(false);
+    <Patient show={true} />;
     setDisplay(true);
     launchPlayer();
   }
@@ -162,6 +169,18 @@ export default function Play({
     }, 5000);
   }
 
+  function Patient({ show }) {
+    if (show == true) {
+      return (
+        <div className="patient">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2143/2143802.png"
+            alt=""
+          />
+        </div>
+      );
+    }
+  }
   return (
     <div className="play">
       <Countdown time={3} onFinish={handleCountdownFinish} />
@@ -175,6 +194,7 @@ export default function Play({
               setProgress={setProgress}
             />
           )}
+
           <ButtonReturn />
           <div className="play__display">
             <PlayInfo selectSong={selectSong} score={score} giveUp={giveUp} />
@@ -192,6 +212,8 @@ export default function Play({
             handleReplay={handleReplay}
             handleAbandon={handleAbandon}
           />
+
+          <div className="patient"></div>
         </>
       )}
     </div>

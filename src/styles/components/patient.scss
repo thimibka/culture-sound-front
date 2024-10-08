@@ -1,0 +1,17 @@
+.patient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.patient img {
+  max-width: 80%;
+  height: auto;
+
+  @media screen and (max-width: 768px) {
+    .patient img {
+      max-width: 80%;
+    }
+  }
+}
